@@ -45,3 +45,25 @@ void main(){
 ```
 
 위의 코드는 동일하게 사용할수 있어보이지만, 차이점은 late 키워드가 붙는다면 언젠가는 초기화 해준다는 의미. name2는 초기화를 해주지 않아도 됨.
+
+## const vs final
+- 상수
+  - 항상 같은 값
+
+- final
+  - 최초에 값이 한번 할당되면 다시 할당할 수 없음.
+```Dart
+final int testValue = 10;
+testValue = 20; // Error
+final int testValue2;
+testValue2 = 10;    
+```
+- const
+  - 최초에 값이 한번 할당되면 다시 할당할 수 없음. 단, 선언과 동시에 할당해야 함.
+  - 해당값은 컴파일 단계에서 확정되어야 함
+```Dart
+const int testValue = 10;
+testValue = 20; //Error
+const int testValue2;
+testValue2 = 20;// Error
+```
