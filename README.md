@@ -32,3 +32,16 @@ String? name = null;
 String name2 = '아';
 String name3 = name ?? name2;
 ```
+## late Keyward
+- 늦은 초기화,
+
+```Dart
+late String name;
+String? name2;
+void main(){
+  name = '아';
+  name2 = '아';
+}
+```
+
+위의 코드는 동일하게 사용할수 있어보이지만, 차이점은 late 키워드가 붙는다면 언젠가는 초기화 해준다는 의미. name2는 초기화를 해주지 않아도 됨.
