@@ -67,3 +67,54 @@ testValue = 20; //Error
 const int testValue2;
 testValue2 = 20;// Error
 ```
+
+## 연산자와 표현식
+- 산술연산자
+```Dart
+void main(){
+  int a = 10;
+  int b = 3;
+  int plus = a + b;
+  int minus = a - b;
+  int product = a * b;
+  double divide = a / b;
+  int remain = a % b;
+  int mok = a ~/ b;
+}
+```
+
+- 비교연산자
+```Dart
+void main(){
+  bool isResult = (a==b);
+}
+```
+
+- 논리연산자
+```Dart
+void main(){
+  bool disjunction = (true || false); // 논리 합(OR)
+  bool conjunction = (true && false); // 논리 곱(AND)
+  bool logicalNot = !conjunction; // 논리 부정(NOT)
+} 
+```
+
+- 할당연산자
+```Dart
+void main(){
+  double c = 10;
+  c += 30;
+  c -= 30;
+  c *= 30;
+  c /= 30;
+}
+```
+
+- 조건연산자
+```Dart
+void main(){
+  int age = 20;
+  String ageStatus = age >= 18 ? '성인' : '미성년자'; // 삼항연산자
+}
+```
+  
