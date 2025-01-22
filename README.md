@@ -4,33 +4,39 @@
 - 변할 수 있는 값
 
 ```Dart
-String name = '아'; // name에 "아"라는 문자열을 할당
-int age = 20; // age에 20이라는 정수를 할당
-var name2 = '어'; // 타입추론 단, 한번 타입이 결정되면 다른타입으로 변경이 불가능
-name2 = 10; // Error
-bool isChecked = false; // true, false의 논리를 정할 때 사용
-double tall = 170.2;
-dynamic car = 'benz'; // 타입추론 var와는 다른점은 다른타입으로 변경이 가능
-car = 10;
+void main(){
+  String name = '아'; // name에 "아"라는 문자열을 할당
+  int age = 20; // age에 20이라는 정수를 할당
+  var name2 = '어'; // 타입추론 단, 한번 타입이 결정되면 다른타입으로 변경이 불가능
+  name2 = 10; // Error
+  bool isChecked = false; // true, false의 논리를 정할 때 사용
+  double tall = 170.2;
+  dynamic car = 'benz'; // 타입추론 var와는 다른점은 다른타입으로 변경이 가능
+  car = 10;
+}
 ```
 
 ## Null Safety
 - 변수가 Null이 될 수 있는지를 명시적으로 지정할 수 있다.
 
 ```Dart
-String name = '아'; // Not Null
-String name2 = null; // Error
-String? name2 = null; // Nullable
-///name2 = '어';
-///print(name2.length);
-print(name2?.length);
+void main(){
+  String name = '아'; // Not Null
+  String name2 = null; // Error
+  String? name2 = null; // Nullable
+  ///name2 = '어';
+  ///print(name2.length);
+  print(name2?.length);
+}
 ```
 
 ## Null 합류 연산자(??)
 ```Dart
-String? name = null;
-String name2 = '아';
-String name3 = name ?? name2;
+void main(){
+  String? name = null;
+  String name2 = '아';
+  String name3 = name ?? name2;
+}
 ```
 ## late Keyward
 - 늦은 초기화,
@@ -53,19 +59,23 @@ void main(){
 - final
   - 최초에 값이 한번 할당되면 다시 할당할 수 없음.
 ```Dart
-final int testValue = 10;
-testValue = 20; // Error
-final int testValue2;
-testValue2 = 10;    
+void main(){
+  final int testValue = 10;
+  testValue = 20; // Error
+  final int testValue2;
+  testValue2 = 10;
+}
 ```
 - const
   - 최초에 값이 한번 할당되면 다시 할당할 수 없음. 단, 선언과 동시에 할당해야 함.
   - 해당값은 컴파일 단계에서 확정되어야 함
 ```Dart
-const int testValue = 10;
-testValue = 20; //Error
-const int testValue2;
-testValue2 = 20;// Error
+void main(){
+  const int testValue = 10;
+  testValue = 20; //Error
+  const int testValue2; // null
+  testValue2 = 20;// Error
+}
 ```
 
 ## 연산자와 표현식
