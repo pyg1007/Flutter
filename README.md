@@ -128,3 +128,35 @@ void main(){
 }
 ```
   
+## 조건문과 반복문
+- if - else문
+```Dart
+void main(){
+  int age = 20;
+  if(age >= 18){
+    print('성인입니다.');
+  }else{
+    print('미성년자입니다.');
+  }
+```
+
+- switch문
+```Dart
+void main(){
+  String grade = 'A'
+  switch(grade){
+    case 'A':
+      print('우수);
+      break;
+    case 'B':
+      print('보통 등급');
+      break;
+    case 'C':
+      print('부족 등급');
+      break;
+    default:
+      print('매우 부족 등급');
+      break;
+  }
+}
+```
