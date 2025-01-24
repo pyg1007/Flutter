@@ -160,3 +160,27 @@ void main(){
   }
 }
 ```
+
+- for 반복문
+일정한 범위에서 반복 작업을 수행할 때 사용
+```Dart
+void main(){
+  for(int i = 0; i < 5; i++){ // ++ : 증감연산자
+    print('$i번 반복합니다.'); // String interpollation
+  }
+}
+```
+
+- while 반복문
+조건이 참인 경우 반복 작업을 수행할 때 사용
+```Dart
+void main(){
+  int count = 0;
+  while(count <3){
+    count++;
+    print('$count번 반복합니다.');
+    // break; - 탈출 구문, 바로 탈출가능함.
+  }
+
+}
+```
