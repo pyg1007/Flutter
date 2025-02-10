@@ -184,3 +184,35 @@ void main(){
 
 }
 ```
+
+# List & Map
+- List
+    - 순서가 있는 데이터 컬렉션, 인덱스(index)로 접근 가능
+```Dart
+void main(){
+  List<int> numbers = [];
+  List<int> numbers1 = [1,2,3,4,5];
+
+  //데이터 추가
+  numbers1.add(6);
+
+  //List 데이터 읽기
+  for(int i = 0; i<number1.length; i++){
+    print('$i번째데이터는 ${number1[i]}입니다.');
+  }
+
+  //데이터 삭제(index를 이용하여 특정위치에 있는 데이터를 삭제)
+  numbers1.removeAt(0);
+}
+```
+
+- Map
+  - Key 와 Value의 한쌍으로 이루어진 데이터 컬렉션, 각 Key는 고유하며, Key를 이용하여 Value데이터 접근 가능
+```Dart
+void main(){
+  Map<String, int> scoreMap = {};
+  Map<String, int> scoreMap1 = {'홍길동':100, '아무개':50};
+
+  //데이터 접근
+  print(scoreMap1['홍길동']);
+}
