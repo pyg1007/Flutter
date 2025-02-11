@@ -215,4 +215,15 @@ void main(){
 
   //데이터 접근
   print(scoreMap1['홍길동']);
+
+  //데이터 갱신
+  scoreMap1['홍길동'] = 88;
+
+  //데이터 추가
+  scoreMap1['최아무개'] = 50;
+
+  //데이터 조회
+  scoreMap1.forEach((key, value){
+    print('$key는 $value점 입니다.')
+  });
 }
