@@ -230,3 +230,28 @@ void main(){
 ```
 
 # 함수와 메서드
+- 함수
+  - 코드의 논리를 분리하고 재 사용성을 높이는데 사용
+  - 함수 이름, 매개변수(parameter), 반환유형(return type)으로 구성
+```Dart
+void main(){ // 프로그램의 출발지점인 메인 함수, void 리턴타입일 경우 아무런 값을 반환하지 않고 실행만 함.
+  print(add(3,5)); // 함수 실행
+}
+
+// 파라미터 a, b를 입력받아 int형으로 리턴해주는 함수
+int add(int a, int b){
+  return a + b;
+}
+```
+
+- 메서드(Method)
+  - class 내부에서 정의된 함수
+```Dart
+class UserInfo{
+  String name;
+  int age
+  void setUserInfo(){
+  
+  }
+}
+```
