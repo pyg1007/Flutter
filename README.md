@@ -255,3 +255,20 @@ class UserInfo{
   }
 }
 ```
+
+# Positional Parameter & Named Parameter
+```Dart
+void setStart1(String name, int age){ // Positional Parameter
+}
+void setStart2({String name = '홍길동', int age = 24}){ // Named Parameter(선택적 파라미터)
+}
+void setStart3({required String name}){ // Named Parameter(필수적 파라미터)
+}
+void main(){
+  setStart1('홍길동', 30);
+  setStart2(age: 50);
+  setStart2(name : '아무개');
+  setStart2();
+  setStart3(name: '홍길동');
+}
+```
