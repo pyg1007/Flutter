@@ -272,3 +272,43 @@ void main(){
   setStart3(name: '홍길동');
 }
 ```
+
+# Class 와 상속
+- Class
+  - 객체를 생성하기 위한 템플릿 또는 청사진, 설계도
+ 
+- 상속
+  - 기존 클래스의 특성을 다른 클래스에서 재사용하고 확장하는 매커니즘
+  - 부모 클래스(super class)와 자식 클래스(sub class)간의 상속관계
+
+```Dart
+class Person{
+  String name;
+  int age;
+
+  //생성자 (constructor)
+  Person(this.name, this.age);
+
+  void say(){
+    print('저는 $name이고 $age살 입니다.')
+  }
+}
+
+class Man extends Person{
+  Man(String name, int age) : super(name, age);
+
+  @override
+  void say(){
+    super.say();
+    print('\n은 남자입니다.');
+  }
+}
+
+void main(){
+  Person person = Person('홍길동', 15); // 클래스 인스턴스 생성
+  person.say();
+
+  Man man = Man('아무개', 20);
+  man.say();
+}
+```
