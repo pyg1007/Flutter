@@ -312,3 +312,33 @@ void main(){
   man.say();
 }
 ```
+
+#생성자(constructor)와 선택적 매개 변수
+- 생성자(constructor)
+  - 클래스의 인스턴스를 초기화하는 특별한 메서드
+  - 클래스를 생성할 때 가장 먼저 호출 되는 자
+```Dart
+class Person{
+  //기본 생성자 (default constructor), 생략할 수 있음.
+  Person();
+}
+class Person2{
+  String name;
+  int age;
+  //매개변수가 존재하는 생성자
+  Person2(this.name, this.age);
+}
+
+class Person3 {
+  String name;
+  int age;
+  Person3({required this.name, required this.age});
+}
+void main(){
+
+  var person = Person();
+  var person2 = Person2('아무개', 30);
+  var person3 = Person3('아무개', 30);
+
+}
+```
