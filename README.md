@@ -342,3 +342,36 @@ void main(){
 
 }
 ```
+
+# Enum타입
+- 열거형, 타입 정의 보통 많이 사용, 상수들의 그룹을 정의할 때 유용함.
+- 협업하는 개발자들 간에 코드를 더 읽기 쉽고 이해하기 쉽게 만들어 줄 수 있기 때문에 사용함.
+
+```Dart
+enum Color {
+  red,
+  green,
+  blue,
+  yellow,
+}
+
+void main(){
+  Color myColor = Color.red;
+
+  //조건문으로 비교
+  if(myColor == Color.red){
+    print('빨간색');
+  } else if(myColor == Color.green){
+    print('초록색');
+  } else if(myColor == Color.blue){
+    print('파란색');
+  } else{
+    print('노란색');
+  }
+
+  //순서를 이용 가능
+  for(int i = 0; i <= Color.values.length; i++){
+    print(Color.values[i]);
+  }
+}
+```
