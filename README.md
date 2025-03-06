@@ -410,3 +410,28 @@ void startGame(){
   print('3. game completed');
 }
 ```
+
+# Column, Row, Expanded 위젯
+## Column
+- 세로로 위젯을 쌓아서 정렬하는 위젯
+
+## Row
+- 가로로 위젯을 쌓아서 정렬하는 위젯
+
+## 속성(프로퍼티)
+- mainAxisSize
+  - min : 크기만큼만 차지
+  - max : 남은 영역을 모두 사용
+- mainAxisAlignment
+  - start : 왼쪽 정렬
+  - end : 오른쪽 정렬
+  - center :가운데 정렬
+  - spaceEvenly : 영역을 고르게 정렬
+  - spaceBetween : start, end 사이에 고르게 배치
+  - spaceAround : 앞/뒤 영역을 두고 배치
+
+## Children
+- 위젯의 하위로 다수의 위젯을 추가할 때 사용
+
+## Expanded
+- 비율적으로 배치하는 위젯
